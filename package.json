@@ -232,7 +232,7 @@
   },
   "dependencies": {
     "@esteemapp/esteem-render-helpers": "^1.4.1",
-    "@fortawesome/fontawesome-free": "^5.2.0",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "antd": "^3.12.3",
     "axios": "^0.18.1",
     "codemirror": "^5.42.0",
