@@ -35,7 +35,9 @@
     "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 node --trace-warnings -r babel-register ./internals/scripts/RunTests.js",
     "test-all": "yarn lint && yarn build && yarn test && yarn test-e2e",
     "test-e2e": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 node --trace-warnings -r babel-register ./internals/scripts/RunTests.js e2e",
-    "test-watch": "yarn test --watch"
+    "test-watch": "yarn test --watch",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "browserslist": "electron 1.6",
   "lint-staged": {
@@ -269,7 +271,8 @@
     "source-map-support": "^0.5.6",
     "speakingurl": "^14.0.1",
     "typeface-roboto": "0.0.54",
-    "typo-js": "^1.0.3"
+    "typo-js": "^1.0.3",
+    "@snyk/protect": "latest"
   },
   "devEngines": {
     "node": ">=7.x",
@@ -278,5 +281,6 @@
   },
   "resolutions": {
     "underscore.string": "^3.3.5"
-  }
+  },
+  "snyk": true
 }
