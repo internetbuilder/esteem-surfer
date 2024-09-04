@@ -242,7 +242,7 @@
     "devtron": "^1.4.0",
     "diff-match-patch": "^1.0.4",
     "electron-debug": "^2.0.0",
-    "electron-updater": "^3.1.6",
+    "electron-updater": "^6.3.0",
     "eslint-plugin-flowtype": "^2.50.1",
     "history": "^4.7.2",
     "hivesigner": "^3.1.5",
